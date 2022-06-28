@@ -59,3 +59,32 @@ chmod 750 gitpush.sh \\실행권한 부여
  
 cat push.log \\로그파일 열어보기
 ```
+## git Pull request, merge
+1.pull request 하고싶은 원본저장소를 Fork 하기   
+2.Fork 한 저장소를 로컬로 Clone 하기   
+3.git clone [주소]   
+4.원본저장소 Remote 설정   
+```
+git remote add [이름] [원본 저장소]
+git remote add [이름] [포크한 저장소]
+```
+5.Branch 생성
+```
+git branch [이름]
+git switch [branch이름]
+git branch \\branch 리스트
+```
+6. 수정 후 
+``` 
+git add .
+git commit -m "[메시지]"
+git push [포크한 저장소] [branch이름]
+```
+7. push 후 포크한 리포지토리에 가면 변경사항이 반영되어있음.   
+8. 상단의 Pull Request 생성 - Create pull request   
+9. 원본저장소의 관리자가 merge를 통해 코드 병합   
+10. Merge 이후 동기화 및 Branch 삭제
+```
+git pull [원본 저장소]
+git branch -d [만든 Branch이름]
+```
