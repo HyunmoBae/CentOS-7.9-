@@ -1,7 +1,7 @@
 ## 오라클 VM 설치
 https://www.virtualbox.org/wiki/Downloads
 
-## 서버 생성
+## 가상환경 생성
 #1.Oracle VM VirtualBox -> 새로만들기 -> 이름, 설치할 폴더 설정 
 (이름적으면 종류,버전이 자동선택됨)
 
@@ -21,7 +21,6 @@ http://mirror.kakao.com/centos/7.9.2009/isos/x86_64/ (CentOS-7-x86_64-Minimal-20
 
 ## 네트워크 설정(NIC)
 네트워크 - 어댑터1(NAT), 어댑터2(호스트전용 어댑터,Host-Only Ethernet Adapter)
-
 
 NAT = 내부 망(사설IP 대역)에서 외부 망(공인IP 대역)으로 나갈 때 하나의 공인IP로 변환되는 방식 (내PC 외부와의 통신)
 
