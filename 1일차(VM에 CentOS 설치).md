@@ -15,7 +15,7 @@ https://www.virtualbox.org/wiki/Downloads
 ## OS 설치 (CentOS)
 ISO 파일 다운(CentOS 7.9 Minimal)
 http://mirror.kakao.com/centos/7.9.2009/isos/x86_64/ (CentOS-7-x86_64-Minimal-2009.iso)   
-https://dldatac.linuxvmimages.com/VMware/C/7/CentOS_7.9.2009_VMM.zip \\CentOS VM이미지
+https://www.linuxvmimages.com/images/centos-7/ \\CentOS vm 이미지
 
 ## 머신 설정
 설정에서 메모리변경, cpu등 설정(가상머신 속도에 영향)
