@@ -1,5 +1,6 @@
 ## 오라클 VM 설치
 https://www.virtualbox.org/wiki/Downloads
+https://dldatac.linuxvmimages.com/VMware/C/7/CentOS_7.9.2009_VMM.zip \\CentOS VM이미지
 
 ## 서버 생성
 #1.Oracle VM VirtualBox -> 새로만들기 -> 이름, 설치할 폴더 설정 
