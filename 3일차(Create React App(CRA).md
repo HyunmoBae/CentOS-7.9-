@@ -1,8 +1,5 @@
 DB → 서버 → 클라이언트
 
-서버 (정적,동적)
-1. (데이터+HTML) → 브라우저
-2. react 등 (데이터(json)) → 아이폰,안드로이드, 등
 ## 설치
 https://create-react-app.dev/docs/adding-typescript/
 
