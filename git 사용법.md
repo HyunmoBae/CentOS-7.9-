@@ -34,6 +34,10 @@ git push [이름] master \\연동된 원격서버로 push (token 발급받고 �
 ```
 그 이후로는 git add , git commit, git push origin master으로 연동
 
+## git push 안될때
+```git pull [원격저장소 이름(origin)] [브런치이름]``` 후
+```git push [원격저장소 이름(origin)] [브런치이름]``` 하기
+
 ## commit명에 대한 일반적인 규칙들
 ```
 git commit -m "커밋 명" 
