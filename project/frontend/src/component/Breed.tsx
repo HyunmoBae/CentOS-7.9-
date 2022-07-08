@@ -17,16 +17,16 @@ export default function Day() {
     const [breeds, setbreed]:any = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3001/breeds/Beagle')
+        fetch('http://localhost:3001/breeds')
         .then(res=> {
             return res.json();
         })
         .then(data => {
-            setbreed(data);
+        setbreed(data);
         });
-    }, []);
+    }, [breeds]);
 
     return (
-      <h1>{breeds.name}</h1>
+      <h1>{breeds[0]?.name}</h1>
       )
   }
