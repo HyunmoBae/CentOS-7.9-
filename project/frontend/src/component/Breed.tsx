@@ -1,15 +1,12 @@
-const a = getdata();
-const b = getdata() as object;
-const c = a.toString();
+import axios from "axios";
+import useSWR from "swr";
 
-async function getdata() {
-  const data = await fetch(`http://localhost:3001/breeds/Beagle`)
-    .then((res) => { return res.json()})
-    .then((datas) => console.log(datas))
-    .catch((error) => console.log(error));
-    return data;
-}
+export default function Container() {
+  const { data: abc } = useSWR(`http://localhost:3001/breeds`, () => fetcher(`http://localhost:3001/breeds`));
+  const fetcher = (url: string) => axios.get(url);
+  console.log(abc?.data[1].name); //axios 응답 -> json 형태
 
-export default function Breed() {
-    return ;
+  const getName = abc?.data[1].name;
+
+  return <h1>{getName}</h1>;
 }

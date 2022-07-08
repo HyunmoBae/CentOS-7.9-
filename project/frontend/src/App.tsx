@@ -1,11 +1,10 @@
 import './App.css';
+import Breed from './component/Breed';
 
 function App() {
   return (
     <div className="App">
-      <h1>
-         hello
-      </h1>
+         <Breed/>
     </div>
   );
 }
