@@ -21,11 +21,11 @@ export class BreedsService {
     return this.breedModel.findOne({name});
   }
 
-  update(name: string, updateBreedDto: UpdateBreedDto) {
-    return this.breedModel.updateOne({name}, {$set: {...updateBreedDto}});
+  update(_id: string, updateBreedDto: UpdateBreedDto) {
+    return this.breedModel.updateOne({_id}, {$set: {...updateBreedDto}});
   }
 
-  remove(name: string) {
-    return this.breedModel.deleteOne({name});
+  remove(id: string) {
+    return this.breedModel.deleteOne({_id : id});
   }
 }
