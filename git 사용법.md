@@ -66,7 +66,7 @@ cat push.log \\로그파일 열어보기
 ## git Pull request, merge
 1.pull request 하고싶은 원본저장소를 Fork 하기   
 2.Fork 한 저장소를 로컬로 Clone 하기   
-3.git clone [주소]   
+3.git clone [주소]   // git clone -b <branchname> <remote-repo-url> 특정 브랜치 가져오기
 4.원본저장소 Remote 설정   
 ```
 git remote add [이름] [원본 저장소]
